@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: payment-apps-service
+spec:
+  selector:
+    app: payment-apps
+  ports:
+  - port: 80
+    targetPort: 80
